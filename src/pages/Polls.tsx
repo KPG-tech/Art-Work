@@ -60,6 +60,7 @@ const Polls: React.FC = () => {
     <div className="max-w-3xl mx-auto">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Polls</h1>
+        /*create poll button*/
         <Dialog open={isCreateModalOpen} onOpenChange={setIsCreateModalOpen}>
           <DialogTrigger asChild>
             <Button className="bg-art-primary hover:bg-art-secondary">
@@ -67,6 +68,7 @@ const Polls: React.FC = () => {
               Create Poll
             </Button>
           </DialogTrigger>
+          /*Modal Content for creating new poll*/
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
               <DialogTitle>Create New Poll</DialogTitle>
@@ -74,6 +76,7 @@ const Polls: React.FC = () => {
                 Ask the community about art techniques, preferences or advice
               </DialogDescription>
             </DialogHeader>
+            /*Poll Question and Options Inputs*/
             <div className="grid gap-4 py-4">
               <div className="grid gap-2">
                 <label htmlFor="question" className="text-sm font-medium">Question</label>
